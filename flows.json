@@ -1,0 +1,2009 @@
+[
+    {
+        "id": "2cc1f9d22165594a",
+        "type": "tab",
+        "label": "Dashboard demo",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "161e13c6dbaab546",
+        "type": "tab",
+        "label": "World map demo",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4102712984e468f8",
+        "type": "subflow",
+        "name": "chart",
+        "info": "[Dashboard page](uikit)",
+        "category": "uikit",
+        "in": [
+            {
+                "x": 100,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "d4a7d3d12aa45eaa"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "order",
+                "type": "num",
+                "value": "4",
+                "ui": {
+                    "icon": "font-awesome/fa-sort-numeric-asc",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 0,
+                        "max": 100
+                    }
+                }
+            },
+            {
+                "name": "xs",
+                "type": "num",
+                "value": "12",
+                "ui": {
+                    "icon": "font-awesome/fa-arrows-h",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 1,
+                        "max": 12
+                    }
+                }
+            },
+            {
+                "name": "label",
+                "type": "str",
+                "value": "label",
+                "ui": {
+                    "icon": "font-awesome/fa-i-cursor",
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str"
+                        ]
+                    }
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#77C6CC",
+        "icon": "node-red/status.svg"
+    },
+    {
+        "id": "8994b5c4dba46c76",
+        "type": "subflow",
+        "name": "gauge",
+        "info": "[Dashboard page](uikit)",
+        "category": "uikit",
+        "in": [
+            {
+                "x": 100,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "f646c546f7c55ca5"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "order",
+                "type": "num",
+                "value": "4",
+                "ui": {
+                    "icon": "font-awesome/fa-sort-numeric-asc",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 0,
+                        "max": 100
+                    }
+                }
+            },
+            {
+                "name": "xs",
+                "type": "num",
+                "value": "12",
+                "ui": {
+                    "icon": "font-awesome/fa-arrows-h",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 1,
+                        "max": 12
+                    }
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#77C6CC",
+        "icon": "node-red/timer.svg"
+    },
+    {
+        "id": "9c0a52e2454bab6f",
+        "type": "subflow",
+        "name": "slider",
+        "info": "[Dashboard page](uikit)",
+        "category": "uikit",
+        "in": [],
+        "out": [
+            {
+                "x": 840,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "059c4bfd1f783c27",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "order",
+                "type": "num",
+                "value": "6",
+                "ui": {
+                    "icon": "font-awesome/fa-sort-numeric-asc",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 0,
+                        "max": 100
+                    }
+                }
+            },
+            {
+                "name": "xs",
+                "type": "num",
+                "value": "4",
+                "ui": {
+                    "icon": "font-awesome/fa-arrows-h",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 1,
+                        "max": 12
+                    }
+                }
+            },
+            {
+                "name": "label",
+                "type": "str",
+                "value": "label",
+                "ui": {
+                    "icon": "font-awesome/fa-i-cursor",
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str"
+                        ]
+                    }
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#B0DFE3",
+        "icon": "font-awesome/fa-sliders"
+    },
+    {
+        "id": "c9fb680bbb1d67cc",
+        "type": "subflow",
+        "name": "switch",
+        "info": "[Dashboard page](uikit)",
+        "category": "uikit",
+        "in": [],
+        "out": [
+            {
+                "x": 840,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "0e58721bf2c05cd1",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "order",
+                "type": "num",
+                "value": "6",
+                "ui": {
+                    "icon": "font-awesome/fa-sort-numeric-asc",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 0,
+                        "max": 100
+                    }
+                }
+            },
+            {
+                "name": "xs",
+                "type": "num",
+                "value": "12",
+                "ui": {
+                    "icon": "font-awesome/fa-arrows-h",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 1,
+                        "max": 12
+                    }
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#B0DFE3",
+        "icon": "font-awesome/fa-toggle-on"
+    },
+    {
+        "id": "1bd86210b503b896",
+        "type": "subflow",
+        "name": "notification",
+        "info": "[Dashboard page](uikit)",
+        "category": "uikit",
+        "in": [
+            {
+                "x": 100,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "45ab401d043df784"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "order",
+                "type": "num",
+                "value": "99",
+                "ui": {
+                    "icon": "font-awesome/fa-sort-numeric-asc",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 0,
+                        "max": 100
+                    }
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#77C6CC",
+        "icon": "node-red/envelope.svg"
+    },
+    {
+        "id": "eceae5246a022264",
+        "type": "subflow",
+        "name": "text input",
+        "info": "[Dashboard page](uikit)",
+        "category": "uikit",
+        "in": [],
+        "out": [
+            {
+                "x": 840,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "56af47fb510e7ad0",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "order",
+                "type": "num",
+                "value": "6",
+                "ui": {
+                    "icon": "font-awesome/fa-sort-numeric-asc",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 0,
+                        "max": 100
+                    }
+                }
+            },
+            {
+                "name": "xs",
+                "type": "num",
+                "value": "4",
+                "ui": {
+                    "icon": "font-awesome/fa-arrows-h",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 1,
+                        "max": 12
+                    }
+                }
+            },
+            {
+                "name": "label",
+                "type": "str",
+                "value": "label",
+                "ui": {
+                    "icon": "font-awesome/fa-i-cursor",
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str"
+                        ]
+                    }
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#B0DFE3",
+        "icon": "font-awesome/fa-text-width"
+    },
+    {
+        "id": "aec0d9b3a72479a3",
+        "type": "subflow",
+        "name": "text",
+        "info": "[Dashboard page](uikit)",
+        "category": "uikit",
+        "in": [
+            {
+                "x": 100,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "5e64d43f85e220d5"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "order",
+                "type": "num",
+                "value": "4",
+                "ui": {
+                    "icon": "font-awesome/fa-sort-numeric-asc",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 0,
+                        "max": 100
+                    }
+                }
+            },
+            {
+                "name": "xs",
+                "type": "num",
+                "value": "12",
+                "ui": {
+                    "icon": "font-awesome/fa-arrows-h",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 1,
+                        "max": 12
+                    }
+                }
+            },
+            {
+                "name": "label",
+                "type": "str",
+                "value": "label",
+                "ui": {
+                    "icon": "font-awesome/fa-i-cursor",
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str"
+                        ]
+                    }
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#77C6CC",
+        "icon": "font-awesome/fa-text-width"
+    },
+    {
+        "id": "54c1e80336f93e12",
+        "type": "subflow",
+        "name": "endpoint",
+        "info": "",
+        "category": "deprecated",
+        "in": [],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "f8178bddf53d614e",
+        "type": "subflow",
+        "name": "button",
+        "info": "[Dashboard page](uikit)",
+        "category": "uikit",
+        "in": [],
+        "out": [
+            {
+                "x": 840,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "f14fd69dd2a8089e",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "order",
+                "type": "num",
+                "value": "2",
+                "ui": {
+                    "icon": "font-awesome/fa-sort-numeric-asc",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 0,
+                        "max": 100
+                    }
+                }
+            },
+            {
+                "name": "xs",
+                "type": "num",
+                "value": "12",
+                "ui": {
+                    "icon": "font-awesome/fa-arrows-h",
+                    "type": "spinner",
+                    "opts": {
+                        "min": 1,
+                        "max": 12
+                    }
+                }
+            },
+            {
+                "name": "label",
+                "type": "str",
+                "value": "button",
+                "ui": {
+                    "icon": "font-awesome/fa-i-cursor",
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str"
+                        ]
+                    }
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#B0DFE3",
+        "icon": "font-awesome/fa-hand-o-up"
+    },
+    {
+        "id": "caaba1e23b7b4c41",
+        "type": "websocket-listener",
+        "path": "/ws4uikit",
+        "wholemsg": "false"
+    },
+    {
+        "id": "e1b4f688743401b3",
+        "type": "inject",
+        "z": "4102712984e468f8",
+        "name": "add component",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "b83fcf8e9ef1ce06"
+            ]
+        ]
+    },
+    {
+        "id": "b83fcf8e9ef1ce06",
+        "type": "function",
+        "z": "4102712984e468f8",
+        "name": "add plot",
+        "func": "var subflowId = env.get('NR_NODE_PATH').split('/').reverse()[1];\n\nif (global.get('jsx[' + env.get('order') + ']')) {\n  node.warn(\"order conflicted\");\n}\n\nglobal.set('jsx[' + env.get('order') + ']',\n           '<Grid item xs={' + env.get('xs') + '}>'\n           + '<Plot data={plotData[\"' + subflowId + '\"]} config={{staticPlot:true}} layout={{width:\"100%\", height:\"400\", title:\"' + env.get('label') + '\"}} />'\n         + '</Grid>');\n\nreturn msg;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "a4d107362460662d",
+        "type": "subflow:54c1e80336f93e12",
+        "z": "4102712984e468f8",
+        "name": "",
+        "x": 560,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "1cfc7f21b191796c",
+        "type": "comment",
+        "z": "4102712984e468f8",
+        "name": "Add the UI component to `jsx` in the global context",
+        "info": "",
+        "x": 270,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "95b2c2cdcef1db94",
+        "type": "comment",
+        "z": "4102712984e468f8",
+        "name": "Endpoint for the dashboard",
+        "info": "",
+        "x": 620,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "f329388374f1498c",
+        "type": "comment",
+        "z": "4102712984e468f8",
+        "name": "UI specific handling",
+        "info": "",
+        "x": 170,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d4a7d3d12aa45eaa",
+        "type": "switch",
+        "z": "4102712984e468f8",
+        "name": "clear?",
+        "property": "$count(payload)",
+        "propertyType": "jsonata",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 210,
+        "y": 260,
+        "wires": [
+            [
+                "68bab89d34a6f1f4"
+            ],
+            [
+                "10f6c1dff074dbf2"
+            ]
+        ]
+    },
+    {
+        "id": "68bab89d34a6f1f4",
+        "type": "function",
+        "z": "4102712984e468f8",
+        "name": "Store data to context",
+        "func": "var subflowId = env.get('NR_NODE_PATH').split('/').reverse()[1];\n\nvar dataX = global.get('plotData[\"' + subflowId + '\"][0].x') || [];\ndataX.push(new Date().toISOString());\nglobal.set('plotData[\"' + subflowId + '\"][0].x', dataX);\n\nvar dataY = global.get('plotData[\"' + subflowId + '\"][0].y') || [];\ndataY.push(msg.payload);\nglobal.set('plotData[\"' + subflowId + '\"][0].y', dataY);\n\nmsg.payload = global.get('plotData');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "2fcb9b1fd3aee802"
+            ]
+        ]
+    },
+    {
+        "id": "2fcb9b1fd3aee802",
+        "type": "change",
+        "z": "4102712984e468f8",
+        "name": "Read all context data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t   \"type\": \"chart\",\t   \"payload\": payload \t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 260,
+        "wires": [
+            [
+                "930e2fa9991a78c6"
+            ]
+        ]
+    },
+    {
+        "id": "10f6c1dff074dbf2",
+        "type": "function",
+        "z": "4102712984e468f8",
+        "name": "Clear context data",
+        "func": "var subflowId = env.get('NR_NODE_PATH').split('/').reverse()[1];\nglobal.set('plotData[\"' + subflowId + '\"]', undefined);\nmsg.payload = global.get('plotData');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "2fcb9b1fd3aee802"
+            ]
+        ]
+    },
+    {
+        "id": "930e2fa9991a78c6",
+        "type": "websocket out",
+        "z": "4102712984e468f8",
+        "name": "",
+        "server": "caaba1e23b7b4c41",
+        "client": "",
+        "x": 860,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "3ca0e773e47d324b",
+        "type": "inject",
+        "z": "8994b5c4dba46c76",
+        "name": "add component",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "0a65bc7dc4acd568"
+            ]
+        ]
+    },
+    {
+        "id": "0a65bc7dc4acd568",
+        "type": "function",
+        "z": "8994b5c4dba46c76",
+        "name": "add CircularProgress",
+        "func": "var subflowId = env.get('NR_NODE_PATH').split('/').reverse()[1];\n\nif (global.get('jsx[' + env.get('order') + ']')) {\n  node.warn(\"order conflicted\");\n}\n\nglobal.set('jsx[' + env.get('order') + ']',\n           '<Grid item xs={' + env.get('xs') + '}>'\n         + '<Box sx={{position:\"relative\",display:\"inline-flex\"}}>'\n         + '<CircularProgress variant=\"determinate\" color=\"success\" size=\"180px\" value={Number(data[\"' + subflowId + '\"]) || 0} />'\n         + '<Box sx={{top:0,left:0,bottom:0,right:0,position:\"absolute\",display:\"flex\",alignItems:\"center\",justifyContent:\"center\"}}>'\n         + '<Typography variant=\"h4\">{Number(data[\"' + subflowId + '\"]) || 0} %</Typography>'\n         + '</Box>'\n\n         + '<Box sx={{top:0,left:0,bottom:0,right:0,position:\"absolute\",display:\"flex\",alignItems:\"center\",justifyContent:\"center\"}}>'\n         + '<CircularProgress variant=\"determinate\" color=\"success\" size=\"152px\" value={Number(data[\"' + subflowId + '\"]) || 0} />'\n         + '</Box>'\n\n\n         + '</Box>'\n         + '</Grid>');\n\nreturn msg;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "5a1a7d27ba921bef",
+        "type": "subflow:54c1e80336f93e12",
+        "z": "8994b5c4dba46c76",
+        "name": "",
+        "x": 580,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "bfc9cacebeea3633",
+        "type": "comment",
+        "z": "8994b5c4dba46c76",
+        "name": "Add the UI component to `jsx` in the global context",
+        "info": "",
+        "x": 270,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "5335b15cf04a7487",
+        "type": "comment",
+        "z": "8994b5c4dba46c76",
+        "name": "Endpoint for the dashboard",
+        "info": "",
+        "x": 640,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "b877cb90d35957e3",
+        "type": "websocket out",
+        "z": "8994b5c4dba46c76",
+        "name": "",
+        "server": "caaba1e23b7b4c41",
+        "client": "",
+        "x": 420,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "7066c1bb463eb04e",
+        "type": "comment",
+        "z": "8994b5c4dba46c76",
+        "name": "UI specific handling",
+        "info": "",
+        "x": 170,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "f646c546f7c55ca5",
+        "type": "change",
+        "z": "8994b5c4dba46c76",
+        "name": "create data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t   $reverse($env('NR_NODE_PATH').$split('/'))[1]: $string(payload) \t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "b877cb90d35957e3"
+            ]
+        ]
+    },
+    {
+        "id": "385b7d35500651b6",
+        "type": "inject",
+        "z": "9c0a52e2454bab6f",
+        "name": "add component",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "a2c449c8cfa5c38c"
+            ]
+        ]
+    },
+    {
+        "id": "a2c449c8cfa5c38c",
+        "type": "function",
+        "z": "9c0a52e2454bab6f",
+        "name": "add Slider",
+        "func": "var subflowId = env.get('NR_NODE_PATH').split('/').reverse()[1];\n\nif (global.get('jsx[' + env.get('order') + ']')) {\n    node.warn(\"order conflicted\");\n}\n\nglobal.set('jsx[' + env.get('order') + ']',\n           '<Grid item xs={' + env.get('xs') + '}>'\n         + '<Typography>' + env.get('label') + '</Typography>'\n         + '<Slider onChange={(e,v) => ws.send(JSON.stringify({\"id\":\"' + subflowId + '\",\"payload\":v}))} />'\n         + '</Grid>');\n\nreturn msg;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "0631f1904d640c1e",
+        "type": "subflow:54c1e80336f93e12",
+        "z": "9c0a52e2454bab6f",
+        "name": "",
+        "x": 560,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "190d3807f2b4cf7b",
+        "type": "comment",
+        "z": "9c0a52e2454bab6f",
+        "name": "Add the UI component to `jsx` in the global context",
+        "info": "",
+        "x": 270,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "726db7b798868a73",
+        "type": "comment",
+        "z": "9c0a52e2454bab6f",
+        "name": "Endpoint for the dashboard",
+        "info": "",
+        "x": 620,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "11df2cac00d5b704",
+        "type": "websocket in",
+        "z": "9c0a52e2454bab6f",
+        "name": "",
+        "server": "caaba1e23b7b4c41",
+        "client": "",
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "b007e747dc67988c"
+            ]
+        ]
+    },
+    {
+        "id": "059c4bfd1f783c27",
+        "type": "change",
+        "z": "9c0a52e2454bab6f",
+        "name": "Set timestamp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "015d616a4e3bf693",
+        "type": "comment",
+        "z": "9c0a52e2454bab6f",
+        "name": "UI specific handling",
+        "info": "",
+        "x": 170,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "f29f0c1b62c53d1c",
+        "type": "switch",
+        "z": "9c0a52e2454bab6f",
+        "name": "check subflow id",
+        "property": "payload.id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "$reverse($env('NR_NODE_PATH').$split('/'))[1]",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 260,
+        "wires": [
+            [
+                "059c4bfd1f783c27"
+            ]
+        ]
+    },
+    {
+        "id": "b007e747dc67988c",
+        "type": "json",
+        "z": "9c0a52e2454bab6f",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 310,
+        "y": 260,
+        "wires": [
+            [
+                "f29f0c1b62c53d1c"
+            ]
+        ]
+    },
+    {
+        "id": "358a4130527d37ff",
+        "type": "inject",
+        "z": "c9fb680bbb1d67cc",
+        "name": "add component",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "840c9e20f5b9f71e"
+            ]
+        ]
+    },
+    {
+        "id": "840c9e20f5b9f71e",
+        "type": "function",
+        "z": "c9fb680bbb1d67cc",
+        "name": "add Switch",
+        "func": "var subflowId = env.get('NR_NODE_PATH').split('/').reverse()[1];\n\nif (global.get('jsx[' + env.get('order') + ']')) {\n  node.warn(\"order conflicted\");\n}\n\nglobal.set('jsx[' + env.get('order') + ']',\n           '<Grid item xs={' + env.get('xs') + '}>'\n         + '<Switch onChange={(e) => ws.send(JSON.stringify({\"id\":\"' + subflowId + '\",\"payload\":e.target.checked}))} />'\n         + '</Grid>');\n\nreturn msg;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2e735c4a9c5e9433",
+        "type": "subflow:54c1e80336f93e12",
+        "z": "c9fb680bbb1d67cc",
+        "name": "",
+        "x": 560,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "135e261514f1ad24",
+        "type": "comment",
+        "z": "c9fb680bbb1d67cc",
+        "name": "Add the UI component to `jsx` in the global context",
+        "info": "",
+        "x": 270,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "45e79486a584ce56",
+        "type": "comment",
+        "z": "c9fb680bbb1d67cc",
+        "name": "Endpoint for the dashboard",
+        "info": "",
+        "x": 620,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "52fc2e94c2d9bbfe",
+        "type": "websocket in",
+        "z": "c9fb680bbb1d67cc",
+        "name": "",
+        "server": "caaba1e23b7b4c41",
+        "client": "",
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "7892a151c2fa4416"
+            ]
+        ]
+    },
+    {
+        "id": "0e58721bf2c05cd1",
+        "type": "change",
+        "z": "c9fb680bbb1d67cc",
+        "name": "Set timestamp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de01d4701d291bc5",
+        "type": "comment",
+        "z": "c9fb680bbb1d67cc",
+        "name": "UI specific handling",
+        "info": "",
+        "x": 170,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8e9eb63f483fa076",
+        "type": "switch",
+        "z": "c9fb680bbb1d67cc",
+        "name": "check subflow id",
+        "property": "payload.id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "$reverse($env('NR_NODE_PATH').$split('/'))[1]",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 260,
+        "wires": [
+            [
+                "0e58721bf2c05cd1"
+            ]
+        ]
+    },
+    {
+        "id": "7892a151c2fa4416",
+        "type": "json",
+        "z": "c9fb680bbb1d67cc",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 310,
+        "y": 260,
+        "wires": [
+            [
+                "8e9eb63f483fa076"
+            ]
+        ]
+    },
+    {
+        "id": "c671c12db131dc9e",
+        "type": "inject",
+        "z": "1bd86210b503b896",
+        "name": "add component",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "bbe11882af4c1919"
+            ]
+        ]
+    },
+    {
+        "id": "bbe11882af4c1919",
+        "type": "function",
+        "z": "1bd86210b503b896",
+        "name": "add Snackbar",
+        "func": "var subflowId = env.get('NR_NODE_PATH').split('/').reverse()[1];\n\nif (global.get('jsx[' + env.get('order') + ']')) {\n    node.warn(\"order conflicted\");\n}\n\nglobal.set('jsx[' + env.get('order') + ']',\n           '<Snackbar message={data[\"' + subflowId + '\"]} open={data[\"' + subflowId + '\"]!==undefined} autoHideDuration={3000} onClose={function () { var tmp = {...data}; delete tmp[\"' + subflowId + '\"]; setData(tmp); }} />');\n\nreturn msg;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "8db9db7ed8d34a32",
+        "type": "subflow:54c1e80336f93e12",
+        "z": "1bd86210b503b896",
+        "name": "",
+        "x": 560,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2eb6a23ac95610aa",
+        "type": "comment",
+        "z": "1bd86210b503b896",
+        "name": "Add the UI component to `jsx` in the global context",
+        "info": "",
+        "x": 270,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d2ef4f394ab68802",
+        "type": "comment",
+        "z": "1bd86210b503b896",
+        "name": "Endpoint for the dashboard",
+        "info": "",
+        "x": 620,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "8f7137cf51e096bd",
+        "type": "websocket out",
+        "z": "1bd86210b503b896",
+        "name": "",
+        "server": "caaba1e23b7b4c41",
+        "client": "",
+        "x": 420,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "568134e56a4b9c50",
+        "type": "comment",
+        "z": "1bd86210b503b896",
+        "name": "UI specific handling",
+        "info": "",
+        "x": 170,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "45ab401d043df784",
+        "type": "change",
+        "z": "1bd86210b503b896",
+        "name": "create data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t   $reverse($env('NR_NODE_PATH').$split('/'))[1]: $string(payload) \t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "8f7137cf51e096bd"
+            ]
+        ]
+    },
+    {
+        "id": "f0a3065f48935431",
+        "type": "inject",
+        "z": "eceae5246a022264",
+        "name": "add component",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "82bcdf899a6a7165"
+            ]
+        ]
+    },
+    {
+        "id": "82bcdf899a6a7165",
+        "type": "function",
+        "z": "eceae5246a022264",
+        "name": "add TextField",
+        "func": "var subflowId = env.get('NR_NODE_PATH').split('/').reverse()[1];\n\nif (global.get('jsx[' + env.get('order') + ']')) {\n  node.warn(\"order conflicted\");\n}\n\nglobal.set('jsx[' + env.get('order') + ']',\n           '<Grid item xs={' + env.get('xs') + '}>'\n         + '<TextField fullWidth label=\"' + env.get('label') + '\" variant=\"standard\" onChange={(e) => ws.send(JSON.stringify({\"id\":\"' + subflowId + '\",\"payload\":e.target.value}))} />'\n         + '</Grid>');\n\nreturn msg;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ae8721aba548d910",
+        "type": "subflow:54c1e80336f93e12",
+        "z": "eceae5246a022264",
+        "name": "",
+        "x": 560,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "1ca26faaaa27afd0",
+        "type": "comment",
+        "z": "eceae5246a022264",
+        "name": "Add the UI component to `jsx` in the global context",
+        "info": "",
+        "x": 270,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "920b0187184deda2",
+        "type": "comment",
+        "z": "eceae5246a022264",
+        "name": "Endpoint for the dashboard",
+        "info": "",
+        "x": 620,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d6f6c31cbe3a0485",
+        "type": "websocket in",
+        "z": "eceae5246a022264",
+        "name": "",
+        "server": "caaba1e23b7b4c41",
+        "client": "",
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "f64b5c4fc72ff9b9"
+            ]
+        ]
+    },
+    {
+        "id": "56af47fb510e7ad0",
+        "type": "change",
+        "z": "eceae5246a022264",
+        "name": "Set timestamp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc7f44e04a7451a8",
+        "type": "comment",
+        "z": "eceae5246a022264",
+        "name": "UI specific handling",
+        "info": "",
+        "x": 170,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "5556b55a273722df",
+        "type": "switch",
+        "z": "eceae5246a022264",
+        "name": "check subflow id",
+        "property": "payload.id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "$reverse($env('NR_NODE_PATH').$split('/'))[1]",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 260,
+        "wires": [
+            [
+                "56af47fb510e7ad0"
+            ]
+        ]
+    },
+    {
+        "id": "f64b5c4fc72ff9b9",
+        "type": "json",
+        "z": "eceae5246a022264",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 310,
+        "y": 260,
+        "wires": [
+            [
+                "5556b55a273722df"
+            ]
+        ]
+    },
+    {
+        "id": "8f3ee5dbe2a9ff34",
+        "type": "inject",
+        "z": "aec0d9b3a72479a3",
+        "name": "add component",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "17953ff2f5fa284c"
+            ]
+        ]
+    },
+    {
+        "id": "17953ff2f5fa284c",
+        "type": "function",
+        "z": "aec0d9b3a72479a3",
+        "name": "add plot",
+        "func": "var subflowId = env.get('NR_NODE_PATH').split('/').reverse()[1];\n\nglobal.set('init[' + env.get('order') + ']',\n           'setTimeout(function () { setData({...data, ...{\"' + subflowId + '\":\"' + env.get('label') + '\"}})}, Math.random()*100);');\n\nif (global.get('jsx[' + env.get('order') + ']')) {\n  node.warn(\"order conflicted\");\n}\n\nglobal.set('jsx[' + env.get('order') + ']',\n           '<Grid item xs={' + env.get('xs') + '}>'\n         + '<Typography display=\"flex\" alignItems=\"center\" minHeight=\"0.8\">{data[\"' + subflowId + '\"]}</Typography>'\n         + '</Grid>');\n\nreturn msg;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "75f084451f29062c",
+        "type": "subflow:54c1e80336f93e12",
+        "z": "aec0d9b3a72479a3",
+        "name": "",
+        "x": 560,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "69ed19aefd522b59",
+        "type": "comment",
+        "z": "aec0d9b3a72479a3",
+        "name": "Add the UI component to `jsx` in the global context",
+        "info": "",
+        "x": 270,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "f82d05f49f9f0670",
+        "type": "comment",
+        "z": "aec0d9b3a72479a3",
+        "name": "Endpoint for the dashboard",
+        "info": "",
+        "x": 620,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "37310f234624a1fe",
+        "type": "websocket out",
+        "z": "aec0d9b3a72479a3",
+        "name": "",
+        "server": "caaba1e23b7b4c41",
+        "client": "",
+        "x": 420,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "496ec17de92941f8",
+        "type": "comment",
+        "z": "aec0d9b3a72479a3",
+        "name": "UI specific handling",
+        "info": "",
+        "x": 170,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "5e64d43f85e220d5",
+        "type": "change",
+        "z": "aec0d9b3a72479a3",
+        "name": "create data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t   $reverse($env('NR_NODE_PATH').$split('/'))[1]: $string(payload) \t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "37310f234624a1fe"
+            ]
+        ]
+    },
+    {
+        "id": "bf132f77860c7bfc",
+        "type": "http in",
+        "z": "54c1e80336f93e12",
+        "name": "",
+        "url": "/uikit",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 260,
+        "wires": [
+            [
+                "ee2530bd1bea6bd6"
+            ]
+        ]
+    },
+    {
+        "id": "3fc876517efca407",
+        "type": "http response",
+        "z": "54c1e80336f93e12",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d77fb6198dd418e2",
+        "type": "template",
+        "z": "54c1e80336f93e12",
+        "name": "HTML",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n<head>\n  <title>{{{env.NR_FLOW_NAME}}}</title>\n  <script src=\"https://unpkg.com/react/umd/react.development.js\"></script>\n  <script src=\"https://unpkg.com/react-dom/umd/react-dom.development.js\"></script>\n  <script src=\"https://unpkg.com/@mui/material/umd/material-ui.development.js\"></script>\n  <script src=\"https://unpkg.com/babel-standalone/babel.min.js\"></script>\n  <script src=\"https://unpkg.com/plotly.js-dist/plotly.js\"></script>\n  <script src=\"https://unpkg.com/react-plotly.js/dist/create-plotly-component.min.js\"></script>\n  <script src=\"https://unpkg.com/react-webcam/dist/react-webcam.min.js\"></script>\n  <script src=\"https://cdn.jsdelivr.net/npm/@tensorflow/tfjs\"></script>\n  <script src=\"https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd\"></script>\n  <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">\n  <script type=\"text/babel\">\n    var data, setData;\n    var plotData, setPlotData;\n    var ws = new WebSocket('ws' + (location.protocol === 'https:' ? 's' : '') + '://' + location.host + '/ws4uikit');\n    ws.onmessage = function (e) {\n      var json = JSON.parse(e.data);\n      if (json.type === 'chart') {\n        setPlotData(json.payload);\n      } else {\n        setData({...data, ...json});\n      }\n      console.log(json);\n    };\n    ws.onclose = function (e) {\n      setTimeout(function () { window.location.reload(); }, 300);\n    };\n    function App() {\n      [data, setData] = React.useState({});\n      [plotData, setPlotData] = React.useState([]);\n      var { Button, Switch, Typography, TextField, CircularProgress, Slider, Snackbar, Grid, Box, AppBar, Toolbar } = MaterialUI;\n      var Plot = createPlotlyComponent.default(Plotly);\n      return (<div>{{{payload}}}</div>);\n    };\n    var root = ReactDOM.createRoot(document.getElementById('root'));\n    root.render(<App />);\n    setTimeout(function () { {{{init}}} }, 100);\n  </script>\n</head>\n<body><div id=\"root\" /></body>\n</html>",
+        "output": "str",
+        "x": 470,
+        "y": 260,
+        "wires": [
+            [
+                "3fc876517efca407"
+            ]
+        ]
+    },
+    {
+        "id": "ee2530bd1bea6bd6",
+        "type": "function",
+        "z": "54c1e80336f93e12",
+        "name": "create jsx",
+        "func": "var init = '';\nif (global.get('init')) {\n    for (var i = 0; i < global.get('init').length; i++) {\n        var tmp = global.get('init[' + i + ']');\n        if (tmp) {\n            init += tmp;\n        }\n    }\n}\nmsg.init = init;\n\nvar jsx = '';\nif (global.get('jsx')) {\n    for (var i = 0; i < global.get('jsx').length; i++) {\n        var tmp = global.get('jsx[' + i + ']');\n        if (tmp) {\n            jsx += tmp;\n        }\n    }\n}\nmsg.payload = '<Grid container spacing={1}><AppBar position=\"static\"><Toolbar><Typography>'\n            + env.get('NR_FLOW_NAME').replace(/</g, '&lt;').replace(/>/g, '&gt;')\n            + '</Typography></Toolbar></AppBar>' + jsx + '</Grid>';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [
+                "d77fb6198dd418e2"
+            ]
+        ]
+    },
+    {
+        "id": "d256fb23a6046d16",
+        "type": "inject",
+        "z": "54c1e80336f93e12",
+        "name": "clear context",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "f1b250323f03ff6f"
+            ]
+        ]
+    },
+    {
+        "id": "f1b250323f03ff6f",
+        "type": "change",
+        "z": "54c1e80336f93e12",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "init",
+                "pt": "global"
+            },
+            {
+                "t": "delete",
+                "p": "jsx",
+                "pt": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "415ffaca442298e7",
+        "type": "comment",
+        "z": "54c1e80336f93e12",
+        "name": "Clear global context after deploying flow immediately",
+        "info": "",
+        "x": 280,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "86619e9c23d0d00c",
+        "type": "comment",
+        "z": "54c1e80336f93e12",
+        "name": "Generate HTML with JSX generated from `jsx` in global context",
+        "info": "",
+        "x": 310,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "f404448243cedfbd",
+        "type": "inject",
+        "z": "f8178bddf53d614e",
+        "name": "add component",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "3213262b32656a24"
+            ]
+        ]
+    },
+    {
+        "id": "3213262b32656a24",
+        "type": "function",
+        "z": "f8178bddf53d614e",
+        "name": "add button",
+        "func": "var subflowId = env.get('NR_NODE_PATH').split('/').reverse()[1];\n\nif (global.get('jsx[' + env.get('order') + ']')) {\n    node.warn(\"order conflicted\");\n}\n\nglobal.set('jsx[' + env.get('order') + ']',\n           '<Grid item xs={' + env.get('xs') + '}>'\n         + '<Button onClick={(e) => ws.send(JSON.stringify({\"id\":\"' + subflowId + '\"}))} variant=\"contained\">'\n         + env.get('label') + '</Button>'\n         + '</Grid>');\n\nreturn msg;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "3d871d2d35c179f3",
+        "type": "subflow:54c1e80336f93e12",
+        "z": "f8178bddf53d614e",
+        "name": "",
+        "x": 560,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "77aceb3d16160020",
+        "type": "comment",
+        "z": "f8178bddf53d614e",
+        "name": "Add the UI component to `jsx` in the global context",
+        "info": "",
+        "x": 270,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "373adb8feecec29c",
+        "type": "comment",
+        "z": "f8178bddf53d614e",
+        "name": "Endpoint for the dashboard",
+        "info": "",
+        "x": 620,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "725a49427164fe74",
+        "type": "websocket in",
+        "z": "f8178bddf53d614e",
+        "name": "",
+        "server": "caaba1e23b7b4c41",
+        "client": "",
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "c4bc5bdb273139d1"
+            ]
+        ]
+    },
+    {
+        "id": "f14fd69dd2a8089e",
+        "type": "change",
+        "z": "f8178bddf53d614e",
+        "name": "Set timestamp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d927a7a65390015f",
+        "type": "comment",
+        "z": "f8178bddf53d614e",
+        "name": "UI specific handling",
+        "info": "",
+        "x": 170,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a0c9983555158280",
+        "type": "switch",
+        "z": "f8178bddf53d614e",
+        "name": "check subflow id",
+        "property": "payload.id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "$reverse($env('NR_NODE_PATH').$split('/'))[1]",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 260,
+        "wires": [
+            [
+                "f14fd69dd2a8089e"
+            ]
+        ]
+    },
+    {
+        "id": "c4bc5bdb273139d1",
+        "type": "json",
+        "z": "f8178bddf53d614e",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 310,
+        "y": 260,
+        "wires": [
+            [
+                "a0c9983555158280"
+            ]
+        ]
+    },
+    {
+        "id": "7c9754771233efa3",
+        "type": "inject",
+        "z": "2cc1f9d22165594a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "$random()",
+        "payloadType": "jsonata",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "86da02a839cc6b5b",
+                "b1fbdc740fbcee20"
+            ]
+        ]
+    },
+    {
+        "id": "86da02a839cc6b5b",
+        "type": "subflow:4102712984e468f8",
+        "z": "2cc1f9d22165594a",
+        "name": "",
+        "x": 330,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b1fbdc740fbcee20",
+        "type": "debug",
+        "z": "2cc1f9d22165594a",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "8eaf6f13a320bd1b",
+        "type": "inject",
+        "z": "161e13c6dbaab546",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "0e57b3f3eed00996"
+            ]
+        ]
+    },
+    {
+        "id": "0e57b3f3eed00996",
+        "type": "http request",
+        "z": "161e13c6dbaab546",
+        "name": "Get ISS location",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.wheretheiss.at/v1/satellites/25544",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 360,
+        "y": 80,
+        "wires": [
+            [
+                "b2ea96ebef20957f",
+                "907924c1467d1cd7"
+            ]
+        ]
+    },
+    {
+        "id": "b2ea96ebef20957f",
+        "type": "worldmap",
+        "z": "161e13c6dbaab546",
+        "name": "",
+        "lat": "",
+        "lon": "",
+        "zoom": "",
+        "layer": "",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "false",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 600,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "907924c1467d1cd7",
+        "type": "template",
+        "z": "161e13c6dbaab546",
+        "name": "Move map",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"command\": {\n        \"lat\": {{payload.latitude}},\n        \"lon\": {{payload.longitude}},\n        \"zoom\": 8\n    }\n}",
+        "output": "json",
+        "x": 490,
+        "y": 160,
+        "wires": [
+            [
+                "b2ea96ebef20957f"
+            ]
+        ]
+    }
+]

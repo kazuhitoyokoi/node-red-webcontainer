@@ -1,0 +1,13 @@
+{
+    "dependencies": {
+        "node-red": "*",
+        "node-red-debugger": "*",
+        "nrlint": "*",
+        "jszip": "*",       
+        "js-beautify": "*",
+        "node-red-contrib-web-worldmap": "*"
+    },
+    "scripts": {
+        "start": "node-red -D editorTheme.tours=false"
+    }
+}
