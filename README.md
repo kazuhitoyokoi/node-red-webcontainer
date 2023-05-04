@@ -60,7 +60,7 @@ In addition to this merit, it can provide a frontend UI developed by Node-RED.
 # Known issues
 Due to the restriction of the WebContainer, there are some issues in this environment.
 
-- Safari, Firefox, and mobile browsers don't work for this environment. Only Google Chrome and Microsoft Edge are supported for this environment. 
+- Firefox don't work for this environment. Google Chrome, Microsoft Edge, Safari including mobile browsers are supported for this environment. 
 - The user cannot install additional nodes to the palette.
 - `http request` node cannot access HTTP endpoints without the CORS header.
 - `mqtt-in` and "mqtt-out` nodes don't work correctly.
